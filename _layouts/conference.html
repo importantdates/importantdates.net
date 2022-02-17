@@ -1,0 +1,23 @@
+---
+layout: default
+---
+<h1>{{page.title}}</h1>
+<h2>Links</h2>
+<ul>
+    <li><a href="{{page.website}}">Conference Website</a></li>
+    <li><a href="/ical/{{page.slug}}.ics">Download Important Dates (.ics)</a></li>
+</ul>
+<h2>Important Dates <small>({{page.timezone}} timezone)</small></h2>
+<ul>
+    {% for important_date in page.important_dates %}
+    <li>{{important_date.date | date: "%e %B %Y"}} {{important_date.title}}</li>
+    {% endfor %}
+</ul>
+<hr/>
+<div>
+    <small>
+        <div><a href="https://github.com/importantdates/importantdates.net/blob/master/_conferences/{{page.slug}}.md">Edit this entry</a></div>
+        <div>Published: {{page.published | date: "%e %B %Y %H:%M:%S%z"}}</div>
+        <div>Last edited: {{page.updated | date: "%e %B %Y %H:%M:%S%z"}}</div>
+    </small>
+</div>

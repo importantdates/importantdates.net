@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Important Dates</title>
+    <link rel="stylesheet" href="{{ '/assets/css/main.css' | relative_url }}"/>
+</head>
+<body>
+<div class="navbar">
+    <ul>
+        <li><a href="/"><b>Important Dates</b></a></li>
+        <li><a href="https://github.com/importantdates/importantdates.net">GitHub</a></li>
+    </ul>
+</div>
+<div class="content">
+    {{ content }}
+    <div class="footer">
+        <small>
+            Site last updated: {{site.time | date: "%e %B %Y %H:%M:%S%z"}}
+        </small>
+    </div>
+</div>
+</body>
+</html>

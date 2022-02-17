@@ -1,0 +1,28 @@
+---
+layout: default
+---
+<h1>{{page.title}}</h1>
+
+{{content}}
+
+<p>Click on a topic to jump to a list of relevant conferences.</p>
+{% assign conference_categories =  site.conferences | map: 'category' | uniq %}
+{% assign upcoming_confs = site.conferences | sort: published | limit: 100 %}
+<div>
+    {% for category in conference_categories %}
+    <span><a class="tag" href="#{{category}}">{{category}}</a></span>
+    {% endfor %}
+</div>
+<hr/>
+<div>
+    {% for category in conference_categories %}
+    <p><a href="#{{category}}">{{category}}</a>  (<a href="/feed/conferences/{{category}}.xml">subscribe to feed</a>)</p>
+    <ul>
+        {% for conference in upcoming_confs %}
+        {% if conference.category == category %}
+        <li><a href="{{conference.url}}">{{conference.title}}</a></li>
+        {% endif %}
+        {% endfor %}
+    </ul>
+    {% endfor %}
+</div>

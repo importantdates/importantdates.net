@@ -1,0 +1,30 @@
+---
+layout: null
+---
+BEGIN:VCALENDAR
+PRODID:-//importantdates.net//Important Dates 17.Feb.2022.0//EN
+VERSION:2.0
+X-WR-CALNAME:{{page.slug}}
+X-WR-TIMEZONE:AoE
+X-WR-CALDESC:{{page.title}}
+BEGIN:VTIMEZONE
+TZID:AoE
+BEGIN:STANDARD
+DTSTART:19671029T020000
+TZOFFSETFROM:-1200
+TZOFFSETTO:-1200
+TZNAME:EST
+END:STANDARD
+END:VTIMEZONE
+METHOD:PUBLISH{% for important_date in page.important_dates %}
+BEGIN:VEVENT
+UID:{{ important_date.date | date: "%Y%m%d" }}{{important_date.title | slugify}}@importantdates.net
+ORGANIZER;CN="{{ page.title }}":MAILTO:noreply@importantdates.net
+SUMMARY:{{ important_date.title }}
+LOCATION:{{page.slug}}
+CLASS:PUBLIC
+DTSTART;TZID={{page.timezone}}:{{ important_date.date | date: "%Y%m%dT%H%M%S" }}
+DTEND;TZID={{page.timezone}}:{{ important_date.date | date: "%Y%m%dT%H%M%S" }}
+DTSTAMP;TZID={{page.timezone}}:{{ important_date.date | date: "%Y%m%dT%H%M%S" }}
+END:VEVENT{% endfor %}
+END:VCALENDAR
