@@ -6,9 +6,7 @@ timezone: AoE
 published: 2022-02-18
 updated: 2022-02-18
 important_dates:
-    - title: Full paper abstracts due 1
-      date: 2022-01-21 23:59:59
-    - title: Full paper abstracts due 2
+    - title: Full paper abstracts due 
       date: 2022-01-21 23:59:59
     - title: Full papers due
       date: 2022-01-28 23:59:59
