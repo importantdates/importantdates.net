@@ -20,7 +20,7 @@ layout: default
     <ul>
         {% for conference in upcoming_confs %}
         {% if conference.category == category %}
-        <li><a href="{{conference.url}}">{{conference.title}}</a></li>
+        <li><a href="{{conference.url}}">{{conference.slug}} &dash; {{conference.title}}</a></li>
         {% endif %}
         {% endfor %}
     </ul>
