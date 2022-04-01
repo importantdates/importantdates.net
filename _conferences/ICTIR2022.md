@@ -4,12 +4,12 @@ website: https://www.ictir2022.org
 category: information-retrieval
 timezone: AoE
 published: 2022-02-23
-updated: 2022-03-01
+updated: 2022-04-01
 important_dates:
     - title: Paper submission deadline
-      date: 2022-04-29 23:59:59
+      date: 2022-04-26 23:59:59
     - title: Notification of acceptance
-      date: 2022-06-12 23:59:59
+      date: 2022-06-07 23:59:59
     - title: Camera ready deadline
       date: 2022-07-01 23:59:59
     - title: Conference date
