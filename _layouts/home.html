@@ -16,7 +16,7 @@ layout: default
 <hr/>
 <div>
     {% for category in conference_categories %}
-    <p><a href="#{{category}}">{{category}}</a>  (<a href="/feed/conferences/{{category}}.xml">subscribe to feed</a>)</p>
+    <p id="{{category}}"><a href="#{{category}}">{{category}}</a>  (<a href="/feed/conferences/{{category}}.xml">subscribe to feed</a>)</p>
     <ul>
         {% for conference in upcoming_confs %}
         {% if conference.category == category %}
