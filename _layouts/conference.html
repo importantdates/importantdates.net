@@ -6,7 +6,8 @@ layout: default
 <h2>Links</h2>
 <ul>
     <li><a href="{{page.website}}">Conference Website</a></li>
-    <li><a href="/ical/{{page.slug}}.ics">Download Important Dates (.ics)</a></li>
+    <li><a href="webcal://{{site.url | remove: 'http://' | remove: 'https://' }}/ical/{{page.slug}}.ics">Subscribe in your calendar</a></li>
+    <li><a href="/ical/{{page.slug}}.ics">Download calendar file (.ics)</a></li>
 </ul>
 <h2>Important Dates <small>({{page.timezone}} timezone)</small></h2>
 <ul>

@@ -53,6 +53,7 @@ feed:
     conferences:
       categories:
         - information-retrieval
+        - natural-language-processing
 
 sass:
   style: compressed
