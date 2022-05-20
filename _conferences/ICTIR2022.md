@@ -11,6 +11,4 @@ important_dates:
       date: 2022-05-06 23:59:59
     - title: Notification of acceptance
       date: 2022-06-07 23:59:59
-    - title: Camera ready deadline
-      date: 2022-07-01 23:59:59
 ---
