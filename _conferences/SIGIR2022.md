@@ -3,6 +3,7 @@ title: The 45th International ACM SIGIR Conference on Research and Development i
 website: https://sigir.org/sigir2022/
 category: information-retrieval
 timezone: AoE
+date: 2022-02-18
 published: 2022-02-18
 updated: 2022-02-18
 important_dates:

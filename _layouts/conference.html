@@ -9,12 +9,16 @@ layout: default
     <li><a href="webcal://{{site.url | remove: 'http://' | remove: 'https://' }}/ical/{{page.slug}}.ics">Subscribe in your calendar</a></li>
     <li><a href="/ical/{{page.slug}}.ics">Download calendar file (.ics)</a></li>
 </ul>
+{% if page.important_dates %}
 <h2>Important Dates <small>({{page.timezone}} timezone)</small></h2>
 <ul>
     {% for important_date in page.important_dates %}
     <li>{{important_date.date | date: "%e %B %Y"}} {{important_date.title}}</li>
     {% endfor %}
 </ul>
+{% else %}
+<h2>No dates published yet.</h2>
+{% endif %}
 <hr/>
 <div>
     <small>
