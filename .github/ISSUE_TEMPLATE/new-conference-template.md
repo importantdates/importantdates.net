@@ -9,4 +9,4 @@ assignees: hscells
 
 - Website: URL
 - Important Dates: URL
-- importantdates.net categorisation: TAG
+- Category: TAG
