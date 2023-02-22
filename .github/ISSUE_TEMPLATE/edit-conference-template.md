@@ -1,7 +1,7 @@
 ---
 name: Edit conference template
 about: Use this issue for requesting a change to a conference.
-title: "[EDIT] CONFTITLE-YEAR"
+title: Edit conference CONFTITLE-YEAR
 labels: conf-edit
 assignees: hscells
 
