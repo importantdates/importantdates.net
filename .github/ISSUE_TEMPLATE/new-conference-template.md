@@ -1,9 +1,9 @@
 ---
 name: New conference template
 about: Use this issue for requesting a new conference to be added.
-title: "[NEW CONF]"
+title: "[NEWCONF] CONFTITLE-YEAR"
 labels: conf-new
-assignees: ''
+assignees: hscells
 
 ---
 
